@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 header{
     width: 100%;
@@ -47,18 +52,19 @@ article #inicio{
     margin: 30px;
     
 }
-
-section{
-    background-color: rgb(254, 245, 245);
-    padding: 80px;
-    margin: 120px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgb(219, 219, 219);
-    /*ajustes paraq la imagen este d lado del texto*/
-    display: flex;
-    align-items: center;
-    gap:20px;
+section {
+  background-color: rgb(254, 245, 245);
+  padding: 80px;
+  margin: 120px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgb(219, 219, 219);
 }
+.section-flex { /*para ms imags*/
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 section img{
     max-width: 300px; /* que no se haga gigante */
   border-radius: 10px;
@@ -91,4 +97,7 @@ footer{
     border-radius: 50px;
     background-color: rgb(255, 128, 128);
     padding: 8px;
+}
+section #normal h2{
+color: black;
 }

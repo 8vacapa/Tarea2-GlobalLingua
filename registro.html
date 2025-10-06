@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Registro - Global Lingua</title>
+</head>
+<body>
+  <header>
+    <h1>- Academia de Idiomas Global Lingua -</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="ingles.html">Inglés</a></li>
+        <li><a href="frances.html">Francés</a></li>
+        <li><a href="aleman.html">Alemán</a></li>
+        <li><a href="registro.html">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Registro de aspirante</h2>
+      <h3>¿Estás interesado? ¡Completa las siguientes preguntas!</h3>
+
+      <form>
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="0" max="120" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="idioma">Idioma de interés:</label>
+        <select id="idioma" name="idioma" required>
+          <option value="">--Selecciona--</option>
+          <option value="ingles">Inglés</option>
+          <option value="frances">Francés</option>
+          <option value="aleman">Alemán</option>
+        </select>
+
+        <label for="nivel">Nivel actual:</label>
+        <select id="nivel" name="nivel" required>
+          <option value="">--Selecciona--</option>
+          <option value="principiante">Principiante</option>
+          <option value="intermedio">Intermedio</option>
+          <option value="avanzado">Avanzado</option>
+        </select>
+
+        <label for="mensaje">Comentarios adicionales:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Dudas o preferencias"></textarea>
+
+        <button type="submit">Enviar Registro</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Web de TI | Contacto: natatoleon@gmail.com</p>
+  </footer>
+</body>
+</html>
